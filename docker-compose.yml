@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  elasticsearch:
+    image: elasticsearch:1.4.4
+    ports:
+      - 9200:9200
+      - 9300:9300
+    volumes:
+      - /Users/andersonsantana/bio-projects/regene-web/elasticsearch-add.yml:/tmp/elasticsearch-add.yml
+      command: cat /tmp/elasticsearch-add.yml >> /etc/elasticsearch/elasticsearch.yml
+  redis:
+    image: redis:alpine
+    ports:
+      - 6379:6379
