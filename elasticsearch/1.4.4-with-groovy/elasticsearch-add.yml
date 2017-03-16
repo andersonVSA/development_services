@@ -13,4 +13,4 @@ script.engine.groovy.inline.mapping: true
 script.engine.groovy.inline.search: true
 script.engine.groovy.inline.update: true
 script.engine.groovy.inline.plugin: true
-
+script.disable_dynamic: false
